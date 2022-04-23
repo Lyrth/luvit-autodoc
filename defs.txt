@@ -1,0 +1,43 @@
+defs
+
+
+
+/api/{module}/types
+Type:
+- name
+- desc
+- methods
+- properties
+
+
+
+/api/{module}
+
+Module: (fs, timer, json, utils, etc.)
+- name
+- displayName
+- desc
+- isClass   : boolean
+- functions : Function[]
+- methods   : 
+- properties: 
+
+Function:   (fs.open, timer.setInterval, json.encode, etc.)
+- name
+- desc
+- signatures: Signature[]
+
+Signature:
+- params    : Param[]
+- return    : Return[]
+- returnOnError : Return[]
+
+Param:
+- name
+- type
+- desc
+- optional  : boolean
+
+Return:
+- type
+- desc
